@@ -1,0 +1,128 @@
+@import './variable';
+.container{
+    background-color: $bg-dark-black ;
+    width:70%;
+    height:90%;
+    max-width:900px !important;
+    font-family: 'IBM Plex Mono';   
+
+    .output{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width:80%;
+        background-color: $bg-light-black;
+    }
+    
+    h6{
+        position:relative;
+
+        span{
+            position: absolute;
+            right: 1px;
+            top: 8px;
+            color: $slider-green;
+            font-size: 14px;
+        }
+    }
+
+    .box{
+        background-color: $bg-light-black;
+        width:80%;
+        margin:auto
+    }
+    .bi svg {
+        color: $slider-green;
+        cursor: pointer;
+    }
+    .btnInput{
+        background: none;
+        box-shadow: none;
+        border: none;
+        color: white;
+    }
+    .btnInput:focus-visible{
+        outline:none;
+        box-shadow:none;
+    }
+    .spanFill{
+        display: inline-flex;
+        margin-left: 5px;
+        width: 4px;
+        height: 13.5px;
+        background-color: $strength-fill;
+    }
+    .spanBlank{
+        display: inline-flex;
+        margin-left: 5px;
+        width: 4px;
+        height: 13.5px;
+        border: 1px solid whitesmoke;
+        background-color: $bg-light-black;
+    }
+    input[type='checkbox'] {
+        accent-color: $slider-green;
+    }
+    .btnCopy{
+        background-color: transparent !important;
+    }
+
+    button{
+        background-color: $slider-green;
+    }
+    .strength{
+        background-color: $bg-dark-black;
+        width:100%;
+    }
+
+    input[type="range"]::-moz-range-progress {
+        background: $slider-green !important;
+    }
+    input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 5px;
+        cursor: pointer;
+        animate: 0.2s;
+        border-radius: 5px;
+        border: none;
+      }
+     
+    input[type=range]{
+        -webkit-appearance: none;
+        width: 100%;
+        border-radius:5px ;
+        border:none;
+        height:6px;
+    }
+    
+    input[type=range]::-webkit-slider-runnable-track {
+        height: 6px;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: $slider-green !important;
+        margin-top: -4px;
+    }
+
+    input[type=range]::-ms-fill-lower {
+        background: $slider-green !important;
+        border-radius: 10px;
+    }
+    input[type=range]::-ms-fill-upper {
+        background: #ddd;
+        border-radius: 10px;
+    }
+    input[type=range]:focus::-ms-fill-lower {
+        background: $slider-green !important;
+    }
+    input[type=range]:focus::-ms-fill-upper {
+        background: #ccc;
+    }
+}
